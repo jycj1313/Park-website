@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>빠른 웹사이트 이동</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e3f0ff 100%);
+      font-family: 'Pretendard', sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(60,120,180,0.15);
+      padding: 40px 32px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .container:hover {
+      box-shadow: 0 16px 48px rgba(60,120,180,0.25);
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #3867d6;
+      letter-spacing: 1px;
+    }
+    .desc {
+      margin-bottom: 28px;
+      color: #444;
+      font-size: 1rem;
+    }
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #3867d6 0%, #67e1ff 90%);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 500;
+      border-radius: 12px;
+      padding: 14px 0;
+      box-shadow: 0 2px 8px rgba(56,103,214,0.10);
+      transition: transform 0.1s, box-shadow 0.1s, background 0.2s;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+    .link-btn:hover, .link-btn:focus {
+      transform: translateY(-2px) scale(1.025);
+      box-shadow: 0 6px 16px rgba(56,103,214,0.15);
+      background: linear-gradient(90deg, #67e1ff 0%, #3867d6 90%);
+    }
+    @media (max-width: 500px) {
+      .container {
+        padding: 24px 8px;
+        max-width: 98vw;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+      .desc {
+        font-size: 0.93rem;
+      }
+      .link-btn {
+        font-size: 1rem;
+        padding: 12px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>원하는 웹사이트로 빠르게 이동하기</h1>
+    <div class="desc">아래 버튼을 클릭하면 바로 해당 웹사이트로 이동합니다.</div>
+    <div class="link-list">
+      <a class="link-btn" href="https://sites.google.com/haegang.es.kr/gd2/%ED%99%88" target="_blank" rel="noopener">1. 청소시간 타임어택</a>
+      <a class="link-btn" href="https://sites.google.com/haegang.es.kr/gd6/%ED%99%88" target="_blank" rel="noopener">2. 타임어택</a>
+      <a class="link-btn" href="https://sites.google.com/haegang.es.kr/gd12221/%ED%99%88" target="_blank" rel="noopener">3. 급식 뽑기</a>
+      <a class="link-btn" href="https://sites.google.com/haegang.es.kr/gd1222/%ED%99%88" target="_blank" rel="noopener">4. 랜덤 뽑기</a>
+      <a class="link-btn" href="https://sites.google.com/haegang.es.kr/gd173/%ED%99%88" target="_blank" rel="noopener">5. 랜덤 자리 뽑기</a>
+      <a class="link-btn" href="https://sites.google.com/haegang.es.kr/gd1233/%ED%99%88" target="_blank" rel="noopener">6. 노래 스트리밍</a>
+      <a class="link-btn" href="https://sites.google.com/haegang.es.kr/gd12321231/%ED%99%88" target="_blank" rel="noopener">7. 교실 볼륨 조절</a>
+    </div>
+  </div>
+</body>
+</html>
